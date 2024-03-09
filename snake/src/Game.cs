@@ -59,8 +59,7 @@ namespace snake.src
                 _yPositions.Add(initialY);
             }
 
-            _berryX = _random.Next(1, ScreenWidth - 2);
-            _berryY = _random.Next(1, ScreenHeight - 2);
+            GenerateNewBerry();
         }
 
         private void DrawBorder()
